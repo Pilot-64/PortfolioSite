@@ -1,4 +1,4 @@
-import { getImages } from "@/lib/getImages";
+import { getImages } from "@/lib/s3-client";
 import MasonryGallery from "./components/MasonryGallery";
 
 export default async function PhotographyPage() {

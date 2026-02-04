@@ -6,6 +6,8 @@ import { SiGithub } from "react-icons/si";
 import { IoArrowForward } from "react-icons/io5";
 import { motion } from "framer-motion";
 
+import { getFileUrl } from "@/lib/s3-client";
+
 // Import project images
 import ParkViewDeviceFrames from "@/app/projects/images/parkviewproject/deviceframes.png";
 import TasklyApp from "@/app/projects/images/taskly/tasklyapp.png";
@@ -45,7 +47,7 @@ const projects: Project[] = [
     name: "Research Paper",
     description:
       "A research paper on the topic 'Optimizing Pathfinding in Urban Environments: A Dynamic Algorithm Approach for Block-Based and Organic City Layouts' ",
-    link: "https://arxiv.org/abs/2309.14063",
+    link: getFileUrl("files/research.pdf"),
     languages: ["Python", "LaTeX"],
     images: {
       main: ResearchPaperThumbnail
